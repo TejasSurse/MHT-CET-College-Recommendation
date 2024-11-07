@@ -16,14 +16,18 @@ app.listen(8080, ()=>{
 
 
 const conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'CETREC'
+    host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
+    user: '3ZVvL1gpxaATkT2.root',
+    password: 'uqFQuMXAja2qePni',
+    database: 'CETREC',
+    ssl: {
+        rejectUnauthorized: false // Use `false` if you're okay with self-signed certificates
+    }
 });
 
 app.get("/", (req, res)=>{
     res.render("home.ejs");
+    console.log(req.ip);
 });
 
 app.get("/streams", (req, res)=>{

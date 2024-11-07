@@ -90,12 +90,12 @@
         <ul>
           <% colleges.forEach(college => { %>
             <li class="college-item">
-              <strong><%= college['Institute Name'] %></strong><br>
-              Branch: <%= college.Branch %><br>
-              Location: <%= college.Location %><br>
+              <strong><%= college['institute name'] %></strong><br>
+              Branch: <%= college.branch %><br>
+              Location: <%= college.location %><br>
               Cutoff: <%= college['cutoff'] %>
               &nbsp; &nbsp;
-              <a href="/show/<%= college['Institute Code'] %>"> <i class="fa-solid fa-eye"> </i> View</a>
+              <a href="/show/<%= college['institute code'] %>"> <i class="fa-solid fa-eye"> </i> View</a>
             </li>
           <% }) %>
         </ul>
