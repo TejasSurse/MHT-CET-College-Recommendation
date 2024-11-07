@@ -1,0 +1,17 @@
+{
+  "name": "cet-college-recommendation",
+  "version": "1.0.0",
+  "description": "CET score Based college recommendation",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "nodemon": "^3.1.7"
+  }
+}
